@@ -1,5 +1,7 @@
-package ca.pandp.plugins.consumers;
+package test;
 
+import ca.pandp.main.Consumer;
+import ca.pandp.plugins.consumers.Consumable;
 import ca.pandp.shared.domainobjects.BeanModel;
 
 import javax.validation.constraints.NotNull;
@@ -12,6 +14,7 @@ import javax.validation.constraints.NotNull;
 
 @net.jcip.annotations.Immutable
 @net.jcip.annotations.ThreadSafe
+@Consumer
 public class ConsumableTest implements Consumable {
 
     public ConsumableTest() {

@@ -1,8 +1,11 @@
-package ca.pandp.plugins.producers;
+package test;
 
+import ca.pandp.main.Producer;
+import ca.pandp.plugins.producers.Producible;
 import ca.pandp.shared.domainobjects.BeanModel;
 import ca.pandp.shared.domainobjects.SimpleBeanModel;
 import ca.pandp.shared.domainobjects.SimpleMethodModel;
+
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 
@@ -17,6 +20,7 @@ import java.util.List;
 
 @net.jcip.annotations.Immutable
 @net.jcip.annotations.ThreadSafe
+@Producer
 public class ProducibleTest implements Producible {
 
     public ProducibleTest() {
