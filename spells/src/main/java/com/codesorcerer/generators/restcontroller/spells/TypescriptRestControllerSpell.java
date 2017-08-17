@@ -167,7 +167,7 @@ public class TypescriptRestControllerSpell extends AbstractSpell<TypescriptContr
             sb.append("               })\n");
 
             if( innerReturnType.equals("string") || innerReturnType.equals("number") ) {
-                String tt = unboxOnceReturnType.endsWith( "[]" ) ? "string[]" : "string";
+                String tt = innerReturnType + ( unboxOnceReturnType.endsWith( "[]" ) ? "[]" : "" );
                 sb.append("       .then((xhr, response:" + tt + ") => {\n");
                 sb.append("            let x = response;\n");
             }
